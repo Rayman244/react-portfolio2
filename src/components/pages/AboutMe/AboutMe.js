@@ -5,9 +5,9 @@ export default function AboutMe(){
     return(<div className="container col-lg-10 col-sm-12">
          <figure className="p-2">
            
-           <h3 className="mt-4">About Me</h3>
+           <h3 className="my-4">About Me</h3>
            
-<div className="container">
+<div className="container my-4">
   <img src={myPhoto} className="img-fluid w-50" alt="Myself"/>
 </div>
            

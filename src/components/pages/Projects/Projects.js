@@ -1,17 +1,17 @@
 import React from "react";
 import Project from "./Project/Project";
 // import data from '../assets/Projects.json'
-import WeatherDashboard from "../../../assets/proj-imgs/Weathe-Dashboard.png";
-import GameGetter from "../../../assets/proj-imgs/home-page.png";
-import Scheduler from "../../../assets/proj-imgs/WorkScheduler.png";
-import Podcast411 from "../../../assets/proj-imgs/Podcast411-4.png";
-import TG from "../../../assets/proj-imgs/TG_Pic.png";
+import WeatherDashboard from "../../../assets/imgs/proj-imgs/Weathe-Dashboard.png";
+import GameGetter from "../../../assets/imgs/proj-imgs/home-page.png";
+import Scheduler from "../../../assets/imgs/proj-imgs/WorkScheduler.png";
+import Podcast411 from "../../../assets/imgs/proj-imgs/Podcast411-4.png";
+import TG from "../../../assets/imgs/proj-imgs/TG_Pic.png";
 const data = [
   {
     id: 1,
     title: "Weather Dashboard",
-    img: "assets/proj-imgs/Weathe-Dashboard.png",
-    link: WeatherDashboard,
+    img: WeatherDashboard,
+    link: "https://rayman244.github.io/Weather-Dashboard/",
     repo: "https://github.com/Rayman244/Weather-Dashboard",
     desc: "This weather dashboard can help you plan at trip to basically anywhere your hearts desire. just type the name of the city in click search and let tha data load.",
   },
@@ -51,8 +51,8 @@ const data = [
 
 export default function Projects() {
   return (
-    <div>
-      <h3 className="container mt-3">Portfolio</h3>
+    <div className="container">
+      <h3 className="container my-3">Portfolio</h3>
       {data.map((proj) => {
         return (
           <Project
