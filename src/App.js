@@ -7,6 +7,7 @@ import Resume from './components/pages/Resume/Resume';
 import Footer from './components/Footer/Footer';
 
 
+
 function App() {
   const [currentPage, setCurrentPage]= useState('Home')
 
