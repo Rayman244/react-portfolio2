@@ -4,6 +4,7 @@ import Projects from './components/pages/Projects/Projects';
 import AboutMe from './components/pages/AboutMe/AboutMe';
 import Contact from './components/pages/Contact/Contact';
 import Resume from './components/pages/Resume/Resume';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -28,8 +29,7 @@ function App() {
     <Navigator currentPage={currentPage} handlePageChange={handlePageChange} />
     {renderPage()}
     </header> 
-  <footer>
-    </footer>
+    <Footer/>
   </>
 }
 
