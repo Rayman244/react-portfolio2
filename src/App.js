@@ -1,13 +1,22 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navigator from './components/Navigation/Navbar';
+// import Projects from './components/Projects/Projects';
+// import AboutMe from './components/AboutMe/AboutMe';
+// import Contact from './components/Contact/Contact';
+import Resume from './components/Resume/Resume';
+
 
 function App() {
   return <>
   <header>
-    <h1>Ray Hewitt</h1>
-    <Navbar />
+    <Navigator />
+    {/* <AboutMe /> */}
+    {/* <Projects /> */}
+    {/* <Contact/> */}
+    <Resume/>
     </header>
-  <footer></footer>
+  <footer>
+    </footer>
   </>
 }
 
