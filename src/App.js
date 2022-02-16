@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigator from './components/Navigation/Navbar';
-// import Projects from './components/Projects/Projects';
-// import AboutMe from './components/AboutMe/AboutMe';
-// import Contact from './components/Contact/Contact';
-import Resume from './components/Resume/Resume';
+import Projects from './components/pages/Projects/Projects';
+import AboutMe from './components/pages/AboutMe/AboutMe';
+import Contact from './components/pages/Contact/Contact';
+import Resume from './components/pages/Resume/Resume';
 
 
 function App() {
+  const [currentPage, setCurrentPage]= useState('Home')
+
+  const renderPage = () => {
+    if (currentPage === 'Home') {
+      return <AboutMe />;
+    }
+    if (currentPage === 'Projects') {
+      return <Projects />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    return <Resume />;
+  };
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return <>
   <header>
-    <Navigator />
-    {/* <AboutMe /> */}
-    {/* <Projects /> */}
-    {/* <Contact/> */}
-    <Resume/>
-    </header>
+    <Navigator currentPage={currentPage} handlePageChange={handlePageChange} />
+    {renderPage()}
+    </header> 
   <footer>
     </footer>
   </>

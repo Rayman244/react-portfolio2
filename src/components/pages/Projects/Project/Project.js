@@ -1,10 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-// import WeatherDashboard from "../../../assets/proj-imgs/Weathe-Dashboard.png"
-// import GameGetter from "../../../assets/proj-imgs/home-page.png"
-// import Scheduler from '../../../assets/proj-imgs/WorkScheduler.png'
-// import Podcast411 from '../../../assets/proj-imgs/Podcast411-4.png'
-// import TG from '../../../assets/proj-imgs/TG_Pic.png'
+
 
 
 export default function Project ({title,img,link,repo,desc}) {

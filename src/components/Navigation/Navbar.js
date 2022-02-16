@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-export default function Navigator() {
+export default function Navigator({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light ">
       <div className="container-fluid ">
@@ -9,7 +9,7 @@ export default function Navigator() {
           Ray Hewitt
         </a>
         <Button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -19,18 +19,40 @@ export default function Navigator() {
         >
           <span className="navbar-toggler-icon"></span>
         </Button>
-        <div className="collapse navbar-collapse text-end" id="navbarNavAltMarkup">
+        <div
+          className="collapse navbar-collapse text-end"
+          id="navbarNavAltMarkup"
+        >
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="/">
+            <a
+              className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+              aria-current="page"
+              href="#AboutMe"
+              onClick={() => handlePageChange("Home")}
+            >
               About Me
             </a>
-            <a className="nav-link" href="/">
+            <a
+              className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+              href="#Portfolio"
+              onClick={() => handlePageChange("Projects")}
+            >
               Portfolio
             </a>
-            <a className="nav-link" href="/">
+            <a
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+              href="#Contact"
+              onClick={() => handlePageChange("Contact")}
+            >
               Contact
             </a>
-            <a className="nav-link" href="/">Resume</a>
+            <a
+               className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+              href="#Resume"
+              onClick={() => handlePageChange("Resume")}
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import myPhoto from "../../assets/my-photo.jpeg"
+import myPhoto from "../../../assets/my-photo.jpeg"
 
 export default function AboutMe(){
     return(<div className="container col-lg-10 col-sm-12">
