@@ -14,7 +14,7 @@ export default function AboutMe() {
      <h3 className="container p-4"style={styles.title}>About Me</h3>
       <figure className="p-2">
         <div className="container">
-          <img src={myPhoto} className="img-fluid w-50" alt="Myself" />
+          <img src={myPhoto} className="img-fluid w-50 pb-4" alt="Myself" />
         </div>
         <div className='container'> 
         <p>

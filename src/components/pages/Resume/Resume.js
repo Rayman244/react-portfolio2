@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../../assets/webDevResume 2.pdf";
+import resume from "../../../assets/webDevResume.pdf";
 import frontendProficiencies from "../../../utils/database/front-prof";
 import backendProficiencies from "../../../utils/database/back-prof";
 import FrontProf from "./prof/FrontProf";

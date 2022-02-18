@@ -2,7 +2,7 @@
 import WeatherDashboard from "../../assets/imgs/proj-imgs/Weathe-Dashboard.png";
 import GameGetter from "../../assets/imgs/proj-imgs/home-page.png";
 import Scheduler from "../../assets/imgs/proj-imgs/WorkScheduler.png";
-import Podcast411 from "../../assets/imgs/proj-imgs/Podcast411-4.png";
+import Podcast411 from "../../assets/imgs/proj-imgs/Podcast411.png";
 import TG from "../../assets/imgs/proj-imgs/TG_Pic.png";
 import Notes from '../../assets/imgs/proj-imgs/noteTakerHome.png'
 
